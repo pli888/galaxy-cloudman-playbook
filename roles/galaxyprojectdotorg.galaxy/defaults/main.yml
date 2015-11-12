@@ -4,25 +4,23 @@
 # Controls which tasks are included, in case you need to perform different
 # options on different hosts or server directories.
 galaxy_manage_clone: yes
-galaxy_vcs: hg
-galaxy_force_checkout: no
+galaxy_vcs: git
 # Download the Galaxy instead cloning, for throw away boxes (e.g. Docker)
 galaxy_manage_download: no
 galaxy_manage_static_setup: yes
 galaxy_manage_mutable_setup: yes
 galaxy_manage_database: yes
-galaxy_fetch_dependencies: yes
-
-# legacy
 galaxy_fetch_eggs: yes
 
 # Where to clone Galaxy from
 galaxy_repo: https://bitbucket.org/galaxy/galaxy-dist
-galaxy_git_repo: https://github.com/galaxyproject/galaxy.git
+#galaxy_git_repo: https://github.com/galaxyproject/galaxy.git
+galaxy_git_repo: https://github.com/gigascience/galaxy.git
 
 # This can be a tag (as shown here) but doing so will cause the revision check
 # task to always report "changed"
-galaxy_changeset_id: stable
+# galaxy_changeset_id: 0be31368caef8ff140817a148e27173ac29919f3 
+galaxy_changeset_id: cytoscape
 
 # Download URL (if used)
 galaxy_download_url: "{{ galaxy_repo }}/get/{{ galaxy_changeset_id }}.tar.gz"

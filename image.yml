@@ -16,7 +16,7 @@
 #     --extra-vars psql_galaxyftp_password=$CM_GALAXY_FTP_PWD
 #     [--extra-vars cleanup=yes]
 #
-# - hosts: image-builder
+#- hosts: image-builder
 - hosts: localhost
   connection: local
   sudo: yes

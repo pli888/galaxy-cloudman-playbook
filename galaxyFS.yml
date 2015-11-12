@@ -13,9 +13,9 @@
 #     --extra-vars psql_galaxyftp_password=$CM_GALAXY_FTP_PWD
 #     --extra-vars galaxy_admin_user_password=$CM_GALAXY_ADMIN_PWD
 #
-# - hosts: galaxyFS-builder
-- hosts: localhost
-  connection: local
+- hosts: galaxyFS-builder
+# - hosts: localhost
+#  connection: local
   gather_facts: False  # Not making system-level changes so skip
   sudo: yes
   sudo_user: "{{ galaxy_user_name }}"
