@@ -6,12 +6,25 @@ cm_setup_galaxy: yes
 
 # Configuration options
 cmg_setup_files:
-  - src: galaxy/welcome.html
-    dest: "{{ galaxy_server_dir }}/static/welcome.html"
-  - src: galaxy/cloud.gif
-    dest: "{{ galaxy_server_dir }}/static/images/cloud.gif"
-  - src: galaxy/cloud_text.png
-    dest: "{{ galaxy_server_dir }}/static/images/cloud_text.png"
+  - src: galaxy/welcome_gigagalaxy.html
+    dest: "{{ galaxy_server_dir }}/static/welcome_gigagalaxy.html"
+  - src: galaxy/cytoscape_galaxy.png
+    dest: "{{ galaxy_server_dir }}/static/welcome/cytoscape_galaxy.png"
+  - src: galaxy/2014_01_biodata_mining_gigascience_widget_cfp_2.png
+    dest: "{{ galaxy_server_dir }}/static/welcome/2014_01_biodata_mining_gigascience_widget_cfp_2.png.png"
+  - src: galaxy/2013-07giga-db.png
+    dest: "{{ galaxy_server_dir }}/static/welcome/2013-07giga-db.png"
+  - src: galaxy/bgi_logo.png
+    dest: "{{ galaxy_server_dir }}/static/welcome/bgi_logo.png"
+  - src: galaxy/cbiit_banner.png
+    dest: "{{ galaxy_server_dir }}/static/welcome/cbiit_banner.png"
+  - src: galaxy/chinagenbank.png
+    dest: "{{ galaxy_server_dir }}/static/welcome/chinagenbank.png"
+  - src: galaxy/cuhk_logo.jpg
+    dest: "{{ galaxy_server_dir }}/static/welcome/cuhk_logo.jpg"
+  - src: galaxy/gigasciencelogo.jpg
+    dest: "{{ galaxy_server_dir }}/static/welcome/gigasciencelogo.jpg"
+
   - src: galaxy/job_conf.xml.cloud
     dest: "{{ galaxy_server_dir }}/config/job_conf.xml"
 
